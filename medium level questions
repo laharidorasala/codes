@@ -1,0 +1,14 @@
+1.Write a Python function that finds the first non-repeating character in a string.If all characters repeat, return None.
+
+  def first_non_repeating_char(a):
+    for char in a:
+        if a.count(char) == 1:
+            return char
+    return None
+print(first_non_repeating_char("swiss"))
+
+2.Determine if two strings contain the same characters in different order.
+a=input("a:")
+b=input("b:")
+print("yes" if sorted(a)==sorted(b) else "no")
+
